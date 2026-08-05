@@ -1,0 +1,145 @@
+{
+  "symbol": "000001.SZ",
+  "overall_score": 78.6,
+  "overall_level": "良 (中低风险)",
+  "dimension_results": {
+    "audit_opinion": {
+      "score": 95,
+      "evidence": [
+        "最近0次审计均为标准无保留意见"
+      ],
+      "details": {
+        "opinion_count": 0,
+        "standard_count": 0,
+        "risk_count": 0
+      },
+      "data_source": "panda_data.get_audit_opinion",
+      "data_status": "success"
+    },
+    "litigation": {
+      "score": 75,
+      "evidence": [
+        "PandaData未提供A股诉讼专用接口，无法获取直接数据",
+        "评分基于行业中性默认值，建议结合公司公告进一步核实"
+      ],
+      "details": {
+        "event_count": 0
+      },
+      "data_source": "无专用接口",
+      "data_status": "no_direct_data"
+    },
+    "related_party": {
+      "score": 55,
+      "evidence": [
+        "20240928: 山东黄金矿业股份有限公司,中国平安保险(集团)股份有限公司(公司股东,同一关键人员,公司其它关联方)",
+        "20241102: 平安养老保险股份有限公司,平安不动产有限公司,中国平安财产保险股份有限公司等(同一控股公司,公司其它关联方)",
+        "20250222: 陆金所控股有限公司(同一关键人员,公司其它关联方)",
+        "20250222: 安科技术有限公司(同一母公司)",
+        "20250222: 平安证券股份有限公司(同一控股公司)",
+        "关联交易总金额: 0.28亿元"
+      ],
+      "details": {
+        "transaction_count": 21,
+        "total_amount": 0.28
+      },
+      "data_source": "panda_data.get_stock_rela_party_trans",
+      "data_status": "success"
+    },
+    "guarantee": {
+      "score": 78,
+      "evidence": [
+        "PandaData未提供A股担保专用接口，无法获取对外担保金额数据",
+        "评分基于行业中性默认值，建议结合公司公告进一步核实"
+      ],
+      "details": {
+        "guarantee_count": 0,
+        "pledge_count": 0
+      },
+      "data_source": "无专用接口",
+      "data_status": "no_direct_data"
+    },
+    "contract": {
+      "score": 75,
+      "evidence": [
+        "PandaData未提供A股合同专用接口，无法获取直接数据",
+        "评分基于行业中性默认值，建议结合公司公告进一步核实"
+      ],
+      "details": {
+        "contract_count": 0
+      },
+      "data_source": "无专用接口",
+      "data_status": "no_direct_data"
+    },
+    "intermediary": {
+      "score": 92,
+      "evidence": [
+        "审计机构为国际四大会计师事务所",
+        "安永华明会计师事务所(特殊普通合伙)",
+        "安永华明会计师事务所(特殊普通合伙)"
+      ],
+      "details": {
+        "intermediary_count": 2,
+        "auditor_count": 2,
+        "has_big4": true
+      },
+      "data_source": "panda_data.get_stock_intermediary_information",
+      "data_status": "success"
+    },
+    "equity_nature": {
+      "score": 65,
+      "evidence": [
+        "股权集中度较高，可能影响治理独立性",
+        "机构投资者参与度较高",
+        "中国平安保险(集团)股份有限公司-集团本级-自有资金: 49.56%",
+        "中国平安人寿保险股份有限公司-自有资金: 6.11%",
+        "香港中央结算有限公司: 2.94%"
+      ],
+      "details": {
+        "top10_ratio_sum": 64.65,
+        "has_institutional": true,
+        "has_foreign": false,
+        "pledge_count": 0
+      },
+      "data_source": "panda_data.get_top_holders",
+      "data_status": "success"
+    },
+    "violation": {
+      "score": 88,
+      "evidence": [
+        "近2年无违规处罚/监管警示记录"
+      ],
+      "details": {
+        "violation_count": 0
+      },
+      "data_source": "panda_data.get_stock_status_change",
+      "data_status": "success"
+    },
+    "stock_acquisition": {
+      "score": 82,
+      "evidence": [
+        "20260425: 前十大股东持股变动数据更新"
+      ],
+      "details": {
+        "acquisition_count": 1
+      },
+      "data_source": "panda_data.get_stock_shareholder_change + get_top_holders",
+      "data_status": "success"
+    }
+  },
+  "data_coverage": {
+    "total_dimensions": 9,
+    "success_count": 6,
+    "missing_count": 0,
+    "error_count": 0,
+    "coverage_rate": 66.7
+  },
+  "industry_comparison": {
+    "industry": "银行",
+    "industry_code": "801780",
+    "industry_avg_score": 79.6,
+    "vs_industry": -1.0,
+    "comparison_status": "基于10家同业公司",
+    "sample_count": 10
+  },
+  "calculation_date": "2026-08-05 23:24:43"
+}
