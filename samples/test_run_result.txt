@@ -1,0 +1,18 @@
+﻿PASS  test_dimensions_count_and_weight
+PASS  test_evidence_chain_contains_all_dims
+======================================================================
+离线自检 (selftest) —— 验证多模块编排链路与评分引擎
+======================================================================
+[1/3] 治理维度数量: 9  权重合计: 100
+[2/3] 加权评分引擎: 全部维度=80 -> 综合=80.0 (应为 80.0)
+[3/3] 证据链渲染: 生成报告 1325 字符，含全部 9 维度分项
+
+自检通过 ✅  多模块编排链路可用（评分引擎 + 证据链渲染）
+PASS  test_main_selftest
+PASS  test_market_type
+PASS  test_result_is_json_serializable
+PASS  test_risk_levels
+PASS  test_weighted_score_engine
+PASS  test_weighted_score_low
+
+结果: 8 passed, 0 failed
