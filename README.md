@@ -63,3 +63,6 @@ python main.py --selftest                   # 离线自检 / Offline self-check
 - PandaData 未提供 A 股诉讼/担保/合同的专用接口，这些维度使用行业中性默认值
 - PandaData does not provide dedicated APIs for A-share litigation/guarantee/contract; these dimensions use industry-neutral defaults
 - LLM 归纳会消耗 DeepSeek 额度 · LLM summarization consumes DeepSeek quota
+
+
+Pandadata 兼容维护：[abgyjaguo](https://github.com/abgyjaguo)，保留原项目作者署名。

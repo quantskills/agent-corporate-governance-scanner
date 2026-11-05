@@ -7,7 +7,7 @@ quantSkills:
   repository_url: https://github.com/quantskills/agent-corporate-governance-scanner
   project_type: agent
   collection: governance
-  license: GPL-3.0
+  license: GPL-3.0-only
   category: agent
   tags: [quant, governance, risk, scoring, agent, llm, 诉讼, 关联交易, 担保, 审计, 公司治理]
   platforms: [claude-code, codex, openclaw]
@@ -148,3 +148,7 @@ agent-corporate-governance-scanner/
 ## References
 
 Use `references/source_boundary.md`.
+
+## Pandadata compatibility
+
+[Pandadata 1.0.6 compatibility](references/pandadata-compatibility.md) — exact SDK baseline, validation scope, and shared guidance for all supported agent runtimes.
