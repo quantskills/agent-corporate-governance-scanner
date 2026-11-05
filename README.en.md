@@ -48,3 +48,6 @@ python scripts/agent-corporate-governance-scanner.py
 ## License
 
 This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE).
+
+
+Pandadata compatibility maintenance: [abgyjaguo](https://github.com/abgyjaguo). Existing authorship is retained.

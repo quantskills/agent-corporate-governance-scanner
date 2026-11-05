@@ -93,23 +93,16 @@ def get_market_type(symbol: str) -> str:
 
 
 def get_industry(symbol: str) -> tuple:
-    """动态获取股票行业分类，返回 (industry_name, industry_code)"""
+    """Return the market-specific documented industry name and code."""
     try:
-        df = panda_data.get_stock_industry(symbol)
-        if df is not None and not df.empty:
-            industry_name = str(df.iloc[0].get("industry_name", ""))
-            industry_code = str(df.iloc[0].get("industry_code", ""))
-            if industry_name:
-                return industry_name, industry_code
-        
-        market = get_market_type(symbol)
-        if market == "hk":
-            df_basic = panda_data.get_stock_basic(symbol)
-            if df_basic is not None and not df_basic.empty:
-                industry_name = str(df_basic.iloc[0].get("industry", ""))
-                if industry_name:
-                    return industry_name, ""
-        
+        if get_market_type(symbol) == "hk":
+            df = panda_data.get_hk_detail(symbol=[symbol], fields=["industry_group"])
+            if df is not None and not df.empty:
+                return str(df.iloc[0].get("industry_group", "")), ""
+        else:
+            df = panda_data.get_stock_industry(stock_symbol=[symbol])
+            if df is not None and not df.empty:
+                return str(df.iloc[0].get("industry_name", "")), str(df.iloc[0].get("industry_code", ""))
         return "其他", ""
     except Exception:
         return "其他", ""
